@@ -1,8 +1,15 @@
+import { Box, Flex } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <Flex>
+      <Navbar />
+      <Box flex="1" p={4}>
+        <Dashboard />
+      </Box>
+    </Flex>
   );
 }
 
